@@ -28,6 +28,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#Historial" data-bs-toggle="modal">Historial</a></li>
                         <li class="nav-item"><a class="nav-link" href="#mantenimiento">Mantenimientos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">localización</a></li>
@@ -204,7 +205,6 @@
 			</div>
             </div>
         </section>
-        <!-- Reservas-->
         
         
         <!-- Footer-->
@@ -272,12 +272,30 @@
             </div>
         </div>
         
-        
-        
-        
-        
-        
-        
+         <!-- Modal Historial-->
+        <div class="modal fade" id="Historial" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body text-center">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Historial</h2>								
+                                      <form>
+                                            <div class="mb-3">
+                                                <label for="placa" class="form-label">Ingrese la placa de su vehículo</label>
+                                                <input type="text" class="form-control" id="placa" aria-describedby="placa">                                                
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Consultar</button>
+                                      </form>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -294,14 +312,14 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.png" alt="..." />
                            
                                   <table class="default">
-<p>
-<tr><td align="left"><li>Altas temperaturas en el motor.</li></td></tr>
-<tr><td align="left"><li>Pérdida de potencia del motor.</li></td></tr>
-<tr><td align="left"><li> Altas revoluciones en el motor y olor a gasolina.</li></td></tr>
-<tr><td align="left"><li> frecuencia en apagados o se inunda el motor.</li></td></tr>
-<tr><td align="left"><li> Sonidos en la caja.</li></td></tr>
-<tr><td align="left"><li> Desajustes en suspención.</li></td></tr>
-<tr><td align="left"><li> Correas dentadas.</li></td></tr></table></p>
+                                        <p>
+                                        <tr><td align="left"><li>Altas temperaturas en el motor.</li></td></tr>
+                                        <tr><td align="left"><li>Pérdida de potencia del motor.</li></td></tr>
+                                        <tr><td align="left"><li> Altas revoluciones en el motor y olor a gasolina.</li></td></tr>
+                                        <tr><td align="left"><li> frecuencia en apagados o se inunda el motor.</li></td></tr>
+                                        <tr><td align="left"><li> Sonidos en la caja.</li></td></tr>
+                                        <tr><td align="left"><li> Desajustes en suspención.</li></td></tr>
+                                        <tr><td align="left"><li> Correas dentadas.</li></td></tr></table></p>
 
 									</table>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -329,10 +347,10 @@
                                     <p class="item-intro text-muted">voltajes</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.png" alt="..." />
                                     <table class="default">
-<p><tr><td align="left"><li>Bajos voltajes en Baterías</li></td></tr>
-<tr><td align="left"><li>Deficiencias en el sistema de inyección</li></td></tr>
-<tr><td align="left"><li>Fallas en sistemas electrónicos </li></td></tr>
-<tr><td align="left"><li>Dificultades en el encendido</li></td></tr></table></p>
+                                        <p><tr><td align="left"><li>Bajos voltajes en Baterías</li></td></tr>
+                                        <tr><td align="left"><li>Deficiencias en el sistema de inyección</li></td></tr>
+                                        <tr><td align="left"><li>Fallas en sistemas electrónicos </li></td></tr>
+                                        <tr><td align="left"><li>Dificultades en el encendido</li></td></tr></table></p>
 
 									</table>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -360,10 +378,10 @@
                                     <p class="item-intro text-muted">Fallas y Ruidos.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpeg" alt="..." />
                                       <table class="default">
-<p><tr><td align="left"><li>Humo azul por el tubo de escape</li></td></tr>
-<tr><td align="left"><li>Consumo excesivo de aceite o gasolina</li></td></tr>
-<tr><td align="left"><li>Ruidos en el motor</li></td></tr>
-<tr><td align="left"><li>Falta de potencia</li></td></tr></table></p>
+                                        <p><tr><td align="left"><li>Humo azul por el tubo de escape</li></td></tr>
+                                        <tr><td align="left"><li>Consumo excesivo de aceite o gasolina</li></td></tr>
+                                        <tr><td align="left"><li>Ruidos en el motor</li></td></tr>
+                                        <tr><td align="left"><li>Falta de potencia</li></td></tr></table></p>
 
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
@@ -390,15 +408,10 @@
                                     <p class="item-intro text-muted">Kit de clutch.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.png" alt="..." />
                                      <table class="default">
-<p><tr><td align="left"><li>Deslizamiento</li></td></tr>
-<tr><td align="left"><li>Olor a quemado</li></td></tr>
-<tr><td align="left"><li>Ruidos</li></td></tr>
-<tr><td align="left"><li>Problemas con el cambio de marchas</li></td></tr></table></p>
-
-
-
-
-
+                                        <p><tr><td align="left"><li>Deslizamiento</li></td></tr>
+                                        <tr><td align="left"><li>Olor a quemado</li></td></tr>
+                                        <tr><td align="left"><li>Ruidos</li></td></tr>
+                                        <tr><td align="left"><li>Problemas con el cambio de marchas</li></td></tr></table></p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
                                         Cerrar
@@ -424,14 +437,12 @@
                                     <p class="item-intro text-muted">Campanas de frenos</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.png" alt="..." />
                                      <table class="default">
-<p><tr><td align="left"><li>Pedal demasiado duro</li></td></tr>
-<tr><td align="left"><li>Pedal bajo</li></td></tr>
-<tr><td align="left"><li>Vibración del pedal</li></td></tr>
-<tr><td align="left"><li>Poco recorrido de vuelta en el pedal</li></td></tr>
-<tr><td align="left"><li>Chirrido o pitido agudo durante la frenada o la marcha</li></td></tr>
-<tr><td align="left"><li>Pérdida de la capacidad de frenada en caliente</li></td></tr></table></p>
-
-
+                                        <p><tr><td align="left"><li>Pedal demasiado duro</li></td></tr>
+                                        <tr><td align="left"><li>Pedal bajo</li></td></tr>
+                                        <tr><td align="left"><li>Vibración del pedal</li></td></tr>
+                                        <tr><td align="left"><li>Poco recorrido de vuelta en el pedal</li></td></tr>
+                                        <tr><td align="left"><li>Chirrido o pitido agudo durante la frenada o la marcha</li></td></tr>
+                                        <tr><td align="left"><li>Pérdida de la capacidad de frenada en caliente</li></td></tr></table></p>
 
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
@@ -458,10 +469,10 @@
                                     <p class="item-intro text-muted">Sintético.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.png" alt="..." />
                                      <table class="default">
-<p><tr><td align="left"><li>tipo de aceite lleva el carro</li></td></tr>
-<tr><td align="left"><li>Seguir expecificaciones del manueal</li></td></tr>
-<tr><td align="left"><li>Revisión de filtros del vehículo</li></td></tr>
-<tr><td align="left"><li>aplicar cantidad y valores correctos</li></td></tr></table></p>
+                                        <p><tr><td align="left"><li>tipo de aceite lleva el carro</li></td></tr>
+                                        <tr><td align="left"><li>Seguir expecificaciones del manueal</li></td></tr>
+                                        <tr><td align="left"><li>Revisión de filtros del vehículo</li></td></tr>
+                                        <tr><td align="left"><li>aplicar cantidad y valores correctos</li></td></tr></table></p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
                                         Cerrar
