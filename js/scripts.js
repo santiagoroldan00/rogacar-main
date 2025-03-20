@@ -60,3 +60,24 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 	
 
 });
+
+
+document.getElementById("formConsultar").addEventListener("submit", async function() {
+  event.preventDefault();
+
+  const placa = document.getElementById("placa").value;
+    const url = `http://lab.rogacar.com/mostrarpdfHistorial.php?placa=${encodeURIComponent(placa)}`;
+
+    const response = await fetch(url, {
+        method: 'GET', 
+    });
+    if (response.ok) {
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        document.getElementById("error").innerText = "";
+        window.open(url, '_blank');
+    } else {
+        const error = await response.json();
+        document.getElementById("error").innerText = error.error;
+    }
+});
